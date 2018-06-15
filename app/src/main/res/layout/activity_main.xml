@@ -1,18 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="fill_vertical|start"
+    android:orientation="vertical"
+    android:background="#cffdf8">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        >
 
-</android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/perfil"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:background="#0d7e83"/>
+
+        <Button
+            android:id="@+id/biblioteca"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="#216583"/>
+
+        <Button
+            android:id="@+id/busqueda"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:background="#f76262"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/configuracion"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:background="#13293d"/>
+
+
+</LinearLayout>
