@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="Crear Usuario"
-            android:id="@+id/NUsauario"/>
+            android:id="@+id/NUsuario"/>
     </LinearLayout>
 
 </LinearLayout>
