@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
         <activity android:name=".MiBiblioteca" />
         <activity android:name=".MiLibro" />
         <activity android:name=".Busqueda" />
-        <activity android:name=".Configuraciones"></activity>
+        <activity android:name=".Configuraciones" />
+        <activity android:name=".Perfil2"></activity>
     </application>
 
 </manifest>
