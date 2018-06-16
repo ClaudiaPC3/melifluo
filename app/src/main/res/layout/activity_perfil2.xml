@@ -96,7 +96,7 @@
             android:layout_marginLeft="10dp"
             android:text="Edad: " />
 
-        <EditText
+        <TextView
             android:id="@+id/edad"
             android:layout_width="120dp"
             android:layout_height="30dp"
@@ -143,7 +143,8 @@
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_gravity="left"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            />
 
 
     </LinearLayout>
