@@ -21,7 +21,9 @@
         <activity android:name=".Busqueda" />
         <activity android:name=".Configuraciones" />
         <activity android:name=".Perfil2" />
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Perfil_Modificar" />
+        <activity android:name=".Perfil_Crear"></activity>
     </application>
 
 </manifest>

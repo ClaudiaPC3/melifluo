@@ -16,7 +16,8 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:id="@+id/btn1"/>
+            android:id="@+id/mod_us"
+            android:text="Modificar Usuario"/>
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
