@@ -20,7 +20,8 @@
         <activity android:name=".MiLibro" />
         <activity android:name=".Busqueda" />
         <activity android:name=".Configuraciones" />
-        <activity android:name=".Perfil2"></activity>
+        <activity android:name=".Perfil2" />
+        <activity android:name=".Menu"></activity>
     </application>
 
 </manifest>

@@ -58,21 +58,21 @@
         android:orientation="horizontal">
 
 
-        <EditText
+        <TextView
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
             android:id="@+id/nombre_usuario"
             android:layout_marginLeft="5dp"/>
 
-        <EditText
+        <TextView
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:id="@+id/apellidoP_usuario"
             android:layout_marginLeft="10dp"/>
 
-        <EditText
+        <TextView
             android:id="@+id/apellidoM_usuario"
             android:layout_width="120dp"
             android:layout_height="50dp"
@@ -138,7 +138,7 @@
             android:layout_marginTop="15dp"
             android:text="Fecha de Unión: " />
 
-        <EditText
+        <TextView
             android:id="@+id/fecha_union"
             android:layout_width="120dp"
             android:layout_height="30dp"

@@ -1,0 +1,68 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_vertical|start"
+    android:orientation="vertical"
+    android:background="#cffdf8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/perfil"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:background="#0d7e83"
+            android:text="Perfil"
+            android:textSize="10dp"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/biblioteca"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="#216583"
+            android:text="Biblioteca"
+            android:textSize="10dp"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/busqueda"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:background="#f76262"
+            android:text="Busqueda"
+            android:textSize="10dp"
+            android:textColor="#ffff"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/configuracion"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:background="#13293d"
+        android:text="Configuraciones"
+        android:textSize="20dp"
+        android:textColor="#ffff"/>
+
+
+</LinearLayout>
