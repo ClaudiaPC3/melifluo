@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 
     android:layout_height="match_parent"
@@ -126,7 +127,6 @@
             android:layout_marginLeft="10dp"
             android:text="Elegir Fecha"/>
 
-
     </LinearLayout>
 
     <TextView
@@ -146,14 +146,47 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/pre-tipo_usuario"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Tipo de Usuario" />
+
+        <CheckBox
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="usuario"
+            />
+        <CheckBox
+            android:id="@+id/administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="administrador"
+            />
+
+
+    </LinearLayout>
     <Button
-        android:id="@+id/modificar"
+        android:id="@+id/crear"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
-        android:text="Modificar"/>
+        android:text="Crear"/>
 
 
 </LinearLayout>
