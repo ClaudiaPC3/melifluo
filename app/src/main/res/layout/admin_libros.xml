@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/pre-imagen"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="URL imagen"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/url_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/pre-titulo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Titulo: "
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <Button
+            android:id="@+id/pre-autores"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:text="Autor: "
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/autores"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/pre-publicacion"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Publicación: "
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/publicacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/pre-numero_edicion"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="N° Edición: "
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+
+
+        <EditText
+            android:id="@+id/numero_edicion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/pre-editorial"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Editorial: "
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/editorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <Button
+            android:id="@+id/pre-categoria"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Categoria: "
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/pre-encuadernado"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Encuadernado: "
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+        <Spinner
+            android:id="@+id/encuadernado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/consultar"
+            android:text="Consultar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/agregar"
+            android:text="agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/modificar"
+            android:text="modificar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/eliminar"
+            android:text="eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
