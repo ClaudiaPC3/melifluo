@@ -120,12 +120,12 @@
             android:text="Fecha de Nacimiento" />
 
         <Button
-            android:id="@+id/edad"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:text="Elegir Fecha"/>
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="Elegir Fecha"/>
 
     </LinearLayout>
 
@@ -168,7 +168,6 @@
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:text="usuario"
-
             />
         <CheckBox
             android:id="@+id/administrador"
@@ -181,6 +180,13 @@
 
 
     </LinearLayout>
+    <Button
+        android:id="@+id/crear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="Crear"/>
 
 
 </LinearLayout>
