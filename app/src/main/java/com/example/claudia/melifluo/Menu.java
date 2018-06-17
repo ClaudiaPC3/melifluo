@@ -20,13 +20,14 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         busqueda = (Button)findViewById(R.id.busqueda);
         configuraciones = (Button)findViewById(R.id.configuracion);
         Intent rec = getIntent();
-        String cuenta = rec.getStringExtra("cuenta");
+        final String cuenta = rec.getStringExtra("cuenta");
 
 
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent per = new Intent(Menu.this, Perfil2.class);
+                per.putExtra("Clave", cuenta);
                 startActivity(per);
             }
         });
