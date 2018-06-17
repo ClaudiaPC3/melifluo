@@ -32,7 +32,8 @@
         <activity android:name=".admin_encuadernado" />
         <activity android:name=".admin_pais" />
         <activity android:name=".admin_editorial" />
-        <activity android:name=".admin_menu"></activity>
+        <activity android:name=".admin_menu" />
+        <activity android:name=".admin_usuarios"></activity>
     </application>
 
 </manifest>
