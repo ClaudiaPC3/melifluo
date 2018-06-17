@@ -3,6 +3,7 @@ package com.example.claudia.melifluo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +22,7 @@ import org.json.JSONObject;
 
 public class Perfil2 extends AppCompatActivity {
     public TextView Nombre, Apellido_P, Apellido_M, Edad, Descr, FechaU;
-    public String img;
+    public ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class Perfil2 extends AppCompatActivity {
         Edad = (TextView)findViewById(R.id.edad);
         Descr = (TextView)findViewById(R.id.desc);
         FechaU = (TextView)findViewById(R.id.fecha_union);
+        img = (ImageView)findViewById(R.id.pefimg);
         Intent recper = getIntent();
         String clave = recper.getStringExtra("Clave");
         String url  = "http://192.168.0.25/Programas/M_Usuario.php?Valor=" + clave;
@@ -49,7 +52,7 @@ public class Perfil2 extends AppCompatActivity {
                             FechaU.setText(""+response.getString(7));
                             Edad.setText(""+response.getString(4));
                             Descr.setText(""+response.getString(5));
-                            img=""+response.getString(6);
+                            Picasso.get().load(""+response.getString(6)).into(img);
                         }catch (JSONException e){
                             e.printStackTrace();
                         }
