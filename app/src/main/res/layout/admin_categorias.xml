@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Categorias: "
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/pre-id"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="ID: "
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/numero_edicion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/pre-nombre"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="Nombre: "
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/crear"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="CREAR" />
+
+            <Button
+                android:id="@+id/agregar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="agregar" />
+
+            <Button
+                android:id="@+id/modificar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="modificar" />
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="eliminar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
