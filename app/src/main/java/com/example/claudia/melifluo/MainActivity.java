@@ -5,16 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public EditText usuario;
     public Button ingresar, nu_usuario;
+    public String cuenta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        usuario = (EditText)findViewById(R.id.Cuenta);
         ingresar = (Button)findViewById(R.id.Ingresar);
         nu_usuario = (Button)findViewById(R.id.NUsuario);
 
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 Intent bus = new Intent(MainActivity.this, Menu.class);
+                cuenta=usuario.getText().toString();
                 startActivity(bus);
             }
         });
