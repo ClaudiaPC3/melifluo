@@ -82,11 +82,11 @@
 
 
         <EditText
+            android:id="@+id/nombre_usuario"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
-            android:id="@+id/nombre_usuario"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp" />
 
         <EditText
             android:layout_width="120dp"
@@ -159,16 +159,8 @@
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:text="Tipo de Usuario" />
+            android:text="Privilegios" />
 
-        <CheckBox
-            android:id="@+id/usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:text="usuario"
-            />
         <CheckBox
             android:id="@+id/administrador"
             android:layout_width="wrap_content"
@@ -181,12 +173,12 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/crear"
+        android:id="@+id/modif"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:text="Crear"/>
+        android:text="Modificar"/>
 
 
 </LinearLayout>
