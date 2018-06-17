@@ -43,7 +43,8 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:id="@+id/btn4"/>
+            android:id="@+id/admin"
+            android:text="Administrador"/>
     </LinearLayout>
 
 
