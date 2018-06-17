@@ -16,10 +16,14 @@
         android:layout_marginTop="100dp"
         android:layout_marginBottom="20dp"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar con usuario existente"/>
         <EditText
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:text="Usuario existente"
+            android:inputType="numberDecimal"
             android:id="@+id/Cuenta"
             />
         <Button
