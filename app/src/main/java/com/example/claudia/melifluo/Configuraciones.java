@@ -9,18 +9,20 @@ import android.widget.Button;
 public class Configuraciones extends AppCompatActivity {
 
     public Button mod_usuario, admin;
-
+    public String clave;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configuraciones);
-
+        Intent recper = getIntent();
+        clave = recper.getStringExtra("Clave");
         mod_usuario = (Button)findViewById(R.id.mod_us);
 
         mod_usuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent per = new Intent(Configuraciones.this, Perfil_Modificar.class);
+                per.putExtra("clave", clave);
                 startActivity(per);
             }
         });

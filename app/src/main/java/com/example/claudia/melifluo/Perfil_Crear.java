@@ -88,7 +88,6 @@ public class Perfil_Crear extends AppCompatActivity implements DatePickerDialog.
         a.set(Calendar.YEAR, year);
         a.set(Calendar.MONTH, month);
         a.set(Calendar.DATE, dayOfMonth);
-        String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(a.getTime());
         if (month < 10)
             fecha = year + "-0" + month + "-";
         else
