@@ -95,7 +95,7 @@
             android:layout_height="30dp"
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
-            android:text="Edad: " />
+            android:text="Fecha de Nacimiento: " />
 
         <TextView
             android:id="@+id/edad"

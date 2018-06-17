@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,9 +33,9 @@ import java.net.URL;
 
 public class Busqueda extends AppCompatActivity {
     public TextView T1, T2, T3;
-    public String Img1, Img2, Img3, clave;
+    public String clave;
     public Button B1, B2, B3;
-
+    public ImageView Im1, Im2, Im3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,9 @@ public class Busqueda extends AppCompatActivity {
         B1=(Button)findViewById(R.id.grdr_l1);
         B2=(Button)findViewById(R.id.grdr_l2);
         B3=(Button)findViewById(R.id.grdr_l3);
+        Im1=(ImageView)findViewById(R.id.imagen_l1);
+        Im2=(ImageView)findViewById(R.id.imagen_l2);
+        Im3=(ImageView)findViewById(R.id.imagen_l3);
         Intent recper = getIntent();
         clave = recper.getStringExtra("Clave");
         String url  = "http://192.168.0.25/Programas/M_Libro_Bus.php?Valor=0";
@@ -56,7 +61,7 @@ public class Busqueda extends AppCompatActivity {
                     public void onResponse(JSONArray response) {
                         try {
                             T1.setText(""+response.getString(0));
-                            Img1=(""+response.getString(1));
+                            Picasso.get().load(""+response.getString(1)).into(Im1);
                         }catch (JSONException e){
                             e.printStackTrace();
                         }
@@ -79,7 +84,7 @@ public class Busqueda extends AppCompatActivity {
                     public void onResponse(JSONArray response) {
                         try {
                             T2.setText(""+response.getString(0));
-                            Img2=(""+response.getString(1));
+                            Picasso.get().load(""+response.getString(1)).into(Im2);
                         }catch (JSONException e){
                             e.printStackTrace();
                         }
@@ -102,7 +107,7 @@ public class Busqueda extends AppCompatActivity {
                     public void onResponse(JSONArray response) {
                         try {
                             T3.setText(""+response.getString(0));
-                            Img3=(""+response.getString(1));
+                            Picasso.get().load(""+response.getString(1)).into(Im3);
                         }catch (JSONException e){
                             e.printStackTrace();
                         }
