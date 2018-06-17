@@ -159,5 +159,6 @@ public class Perfil_Crear extends AppCompatActivity implements DatePickerDialog.
         char[] buffer = new char[len];
         reader.read(buffer);
         return new String(buffer);
+
     }
 }
