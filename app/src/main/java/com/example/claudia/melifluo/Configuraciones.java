@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Configuraciones extends AppCompatActivity {
 
-    public Button mod_usuario;
+    public Button mod_usuario, admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,16 @@ public class Configuraciones extends AppCompatActivity {
             public void onClick(View v) {
                 Intent per = new Intent(Configuraciones.this, Perfil_Modificar.class);
                 startActivity(per);
+            }
+        });
+
+        admin = (Button)findViewById(R.id.admin);
+
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent admins = new Intent(Configuraciones.this, admin_menu.class);
+                startActivity(admins);
             }
         });
     }

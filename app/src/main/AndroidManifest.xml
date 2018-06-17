@@ -25,7 +25,14 @@
         <activity android:name=".Perfil2" />
         <activity android:name=".Menu" />
         <activity android:name=".Perfil_Modificar" />
-        <activity android:name=".Perfil_Crear"></activity>
+        <activity android:name=".Perfil_Crear" />
+        <activity android:name=".admin_autores" />
+        <activity android:name=".admin_libros" />
+        <activity android:name=".admin_categorias" />
+        <activity android:name=".admin_encuadernado" />
+        <activity android:name=".admin_pais" />
+        <activity android:name=".admin_editorial" />
+        <activity android:name=".admin_menu"></activity>
     </application>
 
 </manifest>

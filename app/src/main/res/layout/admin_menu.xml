@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/configuraciones"
+            android:text="CONFIGURACIONES DE ADMINISTRADOR"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_autores"
+            android:text="Autores"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_libro"
+            android:text="Libros"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_categoria"
+            android:text="Categorias"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_encuadernados"
+            android:text="Encuadernados"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_editoriales"
+            android:text="Editoriales"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/admin_pais"
+            android:text="Pais"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
