@@ -119,12 +119,13 @@
             android:text="Fecha de Nacimiento" />
 
         <Button
-            android:id="@+id/edad"
+            android:id="@+id/nac"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:text="Elegir Fecha"/>
+
 
     </LinearLayout>
 
@@ -144,6 +145,15 @@
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/modificar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Modificar"/>
 
 
 </LinearLayout>
