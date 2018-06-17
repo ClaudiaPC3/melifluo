@@ -44,6 +44,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Intent bus = new Intent(Menu.this, Busqueda.class);
+                bus.putExtra("Clave", cuenta);
                 startActivity(bus);
             }
         });
