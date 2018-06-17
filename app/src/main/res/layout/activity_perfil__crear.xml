@@ -164,7 +164,7 @@
         <EditText
             android:id="@+id/clave"
             android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:inputType="numberDecimal"
