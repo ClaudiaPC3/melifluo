@@ -19,6 +19,9 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         biblioteca = (Button)findViewById(R.id.biblioteca);
         busqueda = (Button)findViewById(R.id.busqueda);
         configuraciones = (Button)findViewById(R.id.configuracion);
+        Intent rec = getIntent();
+        String cuenta = rec.getStringExtra("cuenta");
+
 
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent bus = new Intent(MainActivity.this, Menu.class);
                 cuenta=usuario.getText().toString();
-                startActivity(bus);
+                Intent dato = new Intent(MainActivity.this, Menu.class);
+                dato.putExtra("cuenta", cuenta);
+                startActivity(dato);
             }
         });
 
