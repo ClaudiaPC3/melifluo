@@ -21,11 +21,13 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:id="@+id/btn2"/>
+            android:id="@+id/btn2"
+            android:text="COLOR DE PANTALLA PRINCIPAL"/>
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:id="@+id/btn3"/>
+            android:id="@+id/btn3"
+            android:text="CREDITOS"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
