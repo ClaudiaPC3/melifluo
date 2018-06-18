@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#9EFFE0"
+
 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -14,21 +16,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="right"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="15dp">
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <TextView
-            android:layout_width="5dp"
-            android:layout_height="match_parent" />
-        />
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            />
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/pre-autor"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Autor: "
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,31 +145,39 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="20dp">
 
         <Button
-            android:id="@+id/crear"
-            android:text="CREAR"
+            android:id="@+id/consultar"
+            android:text="Consultar"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:background="#FFFF"
+            android:layout_marginEnd="5dp"/>
         <Button
             android:id="@+id/agregar"
             android:text="agregar"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:background="#FFFF"
+            android:layout_marginEnd="5dp"/>
         <Button
             android:id="@+id/modificar"
             android:text="modificar"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:background="#FFFF"
+            android:layout_marginEnd="5dp"/>
         <Button
             android:id="@+id/eliminar"
             android:text="eliminar"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:background="#FFFF"
+            android:layout_marginEnd="5dp"/>
 
     </LinearLayout>
+
 
 
 

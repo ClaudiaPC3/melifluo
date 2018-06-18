@@ -4,58 +4,82 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#FFFF9A7B"
     >
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
         <TextView
-            android:layout_width="300dp"
-            android:layout_height="60dp"
             android:id="@+id/configuraciones"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:text="CONFIGURACIONES DE ADMINISTRADOR"
+            android:textAlignment="center"
             android:textSize="20dp"
-            android:textAlignment="center"/>
+            android:textColor="#000000"/>
+
 
         <Button
+            android:id="@+id/admin_usuarios"
             android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
+            android:background="#AEFDFF"
+            android:text="Usuarios"
+            android:layout_marginTop="10dp"/>
+
+        <Button
             android:id="@+id/admin_autores"
-            android:text="Autores"/>
-        <Button
             android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:id="@+id/admin_libro"
-            android:text="Libros"
-            android:layout_marginTop="10dp"/>
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:id="@+id/admin_categoria"
-            android:text="Categorias"
+            android:layout_height="50dp"
+            android:background="#9EFFE0"
+            android:text="Autores"
             android:layout_marginTop="10dp"/>
 
         <Button
+            android:id="@+id/admin_libro"
             android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#70E8B8"
+            android:text="Libros" />
+
+        <Button
+            android:id="@+id/admin_categoria"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#83FF96"
+            android:text="Categorias" />
+
+
+        <Button
             android:id="@+id/admin_encuadernados"
-            android:text="Encuadernados"
-            android:layout_marginTop="10dp"/>
-        <Button
             android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#60DE76"
+            android:text="Encuadernados" />
+
+        <Button
             android:id="@+id/admin_editoriales"
-            android:text="Editoriales"
-            android:layout_marginTop="10dp"/>
-        <Button
             android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#93E85F"
+            android:text="Editoriales" />
+
+        <Button
             android:id="@+id/admin_pais"
-            android:text="Pais"
-            android:layout_marginTop="10dp"/>
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#00B284"
+            android:text="Pais" />
     </LinearLayout>
 
 

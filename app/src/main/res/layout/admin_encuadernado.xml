@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#A2E379"
 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -86,36 +87,41 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/crear"
+                android:id="@+id/consultar"
+                android:text="Consultar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="CREAR" />
-
+                android:background="#D5FFA7"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:id="@+id/agregar"
+                android:text="agregar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="agregar" />
-
+                android:background="#D5FFA7"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:id="@+id/modificar"
+                android:text="modificar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="modificar" />
-
+                android:background="#D5FFA7"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:id="@+id/eliminar"
+                android:text="eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="eliminar" />
+                android:background="#D5FFA7"
+                android:layout_marginEnd="5dp"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 
