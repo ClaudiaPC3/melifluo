@@ -98,7 +98,7 @@
         android:layout_marginLeft="10dp" >
 
         <Button
-            android:id="@+id/pre-autores"
+            android:id="@+id/pre_select_autores"
             android:layout_width="120dp"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -108,7 +108,7 @@
             android:background="#B4FFE9"/>
 
         <TextView
-            android:id="@+id/autores"
+            android:id="@+id/select_autores"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -202,7 +202,7 @@
         android:layout_marginLeft="10dp" >
 
         <Button
-            android:id="@+id/pre-categoria"
+            android:id="@+id/pre_select_categoria"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -212,7 +212,7 @@
             android:background="#B4FFE9"/>
 
         <TextView
-            android:id="@+id/categoria"
+            android:id="@+id/select_categoria"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"

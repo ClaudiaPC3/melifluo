@@ -47,6 +47,7 @@
             android:layout_height="60dp"
             android:id="@+id/admin"
             android:text="Administrador"
+            android:background="#FFFF9A7B"
             />
     </LinearLayout>
 
