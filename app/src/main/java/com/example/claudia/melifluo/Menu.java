@@ -5,10 +5,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener{
     public Button perfil, biblioteca, busqueda, configuraciones;
-
+    public TextView filas;
+    public String Filas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +34,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         perfil = (Button)findViewById(R.id.perfil);
         biblioteca = (Button)findViewById(R.id.biblioteca);
         busqueda = (Button)findViewById(R.id.busqueda);
+        filas = (TextView)findViewById(R.id.filasta);
         configuraciones = (Button)findViewById(R.id.configuracion);
         Intent rec = getIntent();
         final String cuenta = rec.getStringExtra("cuenta");
@@ -36,6 +53,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Intent bib = new Intent(Menu.this, MiBiblioteca.class);
+                Filas = filas.getText().toString();
+                bib.putExtra("Clave", cuenta);
                 startActivity(bib);
             }
         });

@@ -58,11 +58,16 @@
         android:layout_width="260dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="10dp"
         android:background="#13293d"
         android:text="Configuraciones"
         android:textSize="20dp"
         android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/filasta"/>
 
 
 </LinearLayout>
