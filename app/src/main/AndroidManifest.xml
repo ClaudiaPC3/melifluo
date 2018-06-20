@@ -18,7 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MiBiblioteca" />
         <activity android:name=".MiLibro" />
         <activity android:name=".Busqueda" />
         <activity android:name=".Configuraciones" />
@@ -34,6 +33,7 @@
         <activity android:name=".admin_editorial" />
         <activity android:name=".admin_menu" />
         <activity android:name=".admin_usuarios" />
+        <activity android:name=".MiBiblio"></activity>
     </application>
 
 </manifest>

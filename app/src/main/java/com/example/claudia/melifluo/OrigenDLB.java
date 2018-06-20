@@ -1,10 +1,6 @@
 package com.example.claudia.melifluo;
 
-import android.app.Application;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -12,7 +8,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,8 +21,7 @@ public class OrigenDLB{
 
     Context mContext;
 
-    OrigenDLB(Context context)
-    {
+    OrigenDLB(Context context){
         mContext = context;
     }
 
@@ -46,7 +40,7 @@ public class OrigenDLB{
                             int fin=5;
                         try {
                             for (int i=0; i<fin; i++) {
-                                //[{"titulo":"primero", "url":"link1"}, {"titulo":"segundo", "url":"link2"}]
+                                //[{"titulo":"primero", "url":"link1"}, {"titulo":"segundo", "url":"link2"}] necesita act esta linea
                                 xi =  new BusqPojo();
                                 xi.BPttl = ("" + response.getJSONObject(i).getString("titulo"));
                                 fin = (response.getJSONObject(i).getInt("cant"));
