@@ -65,11 +65,11 @@ public class admin_pais extends AppCompatActivity {
         pa_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String clave, nombre;
+                String clave;
                 clave = pa_id.getText().toString();
                 new CargarDatos().execute("http://192.168.0.25/Programas/Administrador/Pais.php?accion=D&id="+clave+"&nombre=xx");
                 Toast.makeText(getApplicationContext(), "Se ha eliminado correctamente", Toast.LENGTH_LONG).show();
-
+                limpiar();
             }
         });
 

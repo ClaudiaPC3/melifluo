@@ -14,7 +14,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:background="#A2E379"
-        android:text="limpiar" />
+        android:text="limpiar"
+        android:id="@+id/en_clean"/>
 
     <LinearLayout
 
@@ -36,16 +37,16 @@
             android:layout_marginTop="15dp"
             android:text="Encuadernado: "
             android:textAlignment="center"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="10dp" >
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/pre-id"
@@ -54,24 +55,25 @@
                 android:layout_gravity="left"
                 android:text="ID: "
                 android:textAlignment="center"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/numero_edicion"
+                android:id="@+id/en_id"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                android:inputType="numberDecimal" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="10dp" >
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/pre-nombre"
@@ -80,10 +82,10 @@
                 android:layout_gravity="left"
                 android:text="Nombre: "
                 android:textAlignment="center"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/titulo"
+                android:id="@+id/en_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -95,38 +97,41 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/consultar"
-                android:text="Consultar"
+                android:id="@+id/en_consultar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
                 android:background="#D5FFA7"
-                android:layout_marginEnd="5dp"/>
+                android:text="Consultar" />
+
             <Button
-                android:id="@+id/agregar"
-                android:text="agregar"
+                android:id="@+id/en_agregar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
                 android:background="#D5FFA7"
-                android:layout_marginEnd="5dp"/>
+                android:text="agregar" />
+
             <Button
-                android:id="@+id/modificar"
-                android:text="modificar"
+                android:id="@+id/en_modificar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
                 android:background="#D5FFA7"
-                android:layout_marginEnd="5dp"/>
+                android:text="modificar" />
+
             <Button
-                android:id="@+id/eliminar"
-                android:text="eliminar"
+                android:id="@+id/en_eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
                 android:background="#D5FFA7"
-                android:layout_marginEnd="5dp"/>
+                android:text="eliminar" />
 
         </LinearLayout>
 

@@ -15,7 +15,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:background="#83FF96"
-        android:text="limpiar" />
+        android:text="limpiar"
+        android:id="@+id/cat_clean"/>
 
     <LinearLayout
 
@@ -58,11 +59,13 @@
                 android:textSize="20dp"/>
 
             <EditText
-                android:id="@+id/numero_edicion"
+                android:id="@+id/cat_id"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                android:inputType="numberDecimal"
+                />
 
         </LinearLayout>
 
@@ -84,7 +87,7 @@
                 android:textSize="20dp"/>
 
             <EditText
-                android:id="@+id/titulo"
+                android:id="@+id/cat_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -101,7 +104,7 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/consultar"
+                android:id="@+id/cat_consultar"
                 android:text="Consultar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -109,7 +112,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
-                android:id="@+id/agregar"
+                android:id="@+id/cat_agregar"
                 android:text="agregar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -117,7 +120,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
-                android:id="@+id/modificar"
+                android:id="@+id/cat_modificar"
                 android:text="modificar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -125,7 +128,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
-                android:id="@+id/eliminar"
+                android:id="@+id/cat_eliminar"
                 android:text="eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
