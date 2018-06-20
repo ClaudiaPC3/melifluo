@@ -16,7 +16,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:background="#9EFFE0"
-        android:text="limpiar" />
+        android:text="limpiar"
+        android:id="@+id/au_clean"/>
 
 
 
@@ -61,7 +62,7 @@
             android:textAlignment="center"/>
 
         <EditText
-            android:id="@+id/numero_edicion"
+            android:id="@+id/au_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -88,7 +89,7 @@
             android:textAlignment="center"/>
 
         <EditText
-            android:id="@+id/titulo"
+            android:id="@+id/au_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -114,7 +115,7 @@
             android:textAlignment="center"/>
 
         <EditText
-            android:id="@+id/apellidoP_autor"
+            android:id="@+id/au_app"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -140,7 +141,7 @@
             android:textAlignment="center"/>
 
         <EditText
-            android:id="@+id/apellidoM_autor"
+            android:id="@+id/au_apm"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -158,28 +159,28 @@
         android:layout_marginTop="20dp">
 
         <Button
-            android:id="@+id/consultar"
+            android:id="@+id/au_consultar"
             android:text="Consultar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#FFFF"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/agregar"
+            android:id="@+id/au_agregar"
             android:text="agregar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#FFFF"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/modificar"
+            android:id="@+id/au_modificar"
             android:text="modificar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#FFFF"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/eliminar"
+            android:id="@+id/au_eliminar"
             android:text="eliminar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
