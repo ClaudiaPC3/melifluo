@@ -51,7 +51,7 @@ public class OrigenDLB{
                                 xi.BPttl = ("" + response.getJSONObject(i).getString("titulo"));
                                 fin = (response.getJSONObject(i).getInt("cant"));
                                 xi.BPimg = ("" + response.getJSONObject(i).getString("url"));
-                                xi.BPclv = i;
+                                xi.BPclv = ("" + response.getJSONObject(i).getString("clv"));
                                 resultado.add(xi);
                             }
                         }catch (JSONException e){

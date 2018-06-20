@@ -19,6 +19,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -30,9 +31,10 @@ public class BusqAdpat extends BaseAdapter{
     public LayoutInflater inflater;
     public Button btn;
     public String clave;
+    public String libro;
 
     BusqAdpat(String clv){
-         clave = clv;
+        clave = clv;
     }
 
     @Override
@@ -47,11 +49,11 @@ public class BusqAdpat extends BaseAdapter{
 
     @Override
     public long getItemId(int i) {
-        return arreglo.get(i).BPclv;
+        return 0;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
         inflater=LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.busq_libr, null);
         TextView ttl = (TextView) v.findViewById(R.id.nombre_l);
@@ -59,13 +61,13 @@ public class BusqAdpat extends BaseAdapter{
         ImageView img = (ImageView) v.findViewById(R.id.imagen_l);
         Picasso.get().load(arreglo.get(i).BPimg).into(img);
         btn = (Button) v.findViewById(R.id.grdr_l);
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CargarDatos().execute("http://192.168.0.25/Programas/Guardar_L.php?usuario="+clave+"&libro=0");
+                new CargarDatos().execute("http://192.168.0.25/Programas/Guardar_L.php?usuario="+clave+"&libro="+arreglo.get(i).BPclv);
             }
         });
+
 
         return v;
     }
