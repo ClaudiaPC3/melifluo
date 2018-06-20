@@ -28,7 +28,7 @@ public class MiBiblio extends AppCompatActivity {
         adape.arregl = orgn.showAll();
         adape.context = this;
         try {
-            Thread.sleep(1000);
+            Thread.sleep(300);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
