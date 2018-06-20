@@ -1,6 +1,9 @@
 package com.example.claudia.melifluo;
 
+import android.app.Application;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -16,8 +19,18 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 
-public class OrigenDLB {
-    public Context context;
+
+
+
+public class OrigenDLB{
+
+    Context mContext;
+
+    OrigenDLB(Context context)
+    {
+        mContext = context;
+    }
+
     public ArrayList<BusqPojo>showAll(){
         final ArrayList<BusqPojo> resultado=new ArrayList<BusqPojo>();
 
@@ -30,15 +43,15 @@ public class OrigenDLB {
                     @Override
                     public void onResponse(JSONArray response) {
                             BusqPojo xi;
+                            int fin=5;
                         try {
-                            for (int i=0; i<6; i++) {
+                            for (int i=0; i<fin; i++) {
                                 //[{"titulo":"primero", "url":"link1"}, {"titulo":"segundo", "url":"link2"}]
                                 xi =  new BusqPojo();
                                 xi.BPttl = ("" + response.getJSONObject(i).getString("titulo"));
+                                fin = (response.getJSONObject(i).getInt("cant"));
                                 xi.BPimg = ("" + response.getJSONObject(i).getString("url"));
                                 xi.BPclv = i;
-                                //unica.BPttl=(""+response.getString(0));
-                                //unica.BPimg=(""+response.getString(1));
                                 resultado.add(xi);
                             }
                         }catch (JSONException e){
@@ -53,7 +66,7 @@ public class OrigenDLB {
             }
         }
         );
-        RequestQueue x= Volley. newRequestQueue(context);
+        RequestQueue x= Volley. newRequestQueue(mContext);
         x.add(peticion);
         return resultado;
     }

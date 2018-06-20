@@ -33,7 +33,7 @@
         <activity android:name=".admin_pais" />
         <activity android:name=".admin_editorial" />
         <activity android:name=".admin_menu" />
-        <activity android:name=".admin_usuarios"></activity>
+        <activity android:name=".admin_usuarios" />
     </application>
 
 </manifest>
