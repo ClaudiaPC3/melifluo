@@ -53,7 +53,6 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Intent bib = new Intent(Menu.this, MiBiblioteca.class);
-                Filas = filas.getText().toString();
                 bib.putExtra("Clave", cuenta);
                 startActivity(bib);
             }
