@@ -19,10 +19,9 @@ import java.util.ArrayList;
 public class OrigenDLB {
     public Context context;
     public ArrayList<BusqPojo>showAll(){
-        ArrayList<BusqPojo> resultado=new ArrayList<BusqPojo>();
+        final ArrayList<BusqPojo> resultado=new ArrayList<BusqPojo>();
 
-        final BusqPojo unica = new BusqPojo();
-        String url  = "http://192.168.0.25/Programas/M_Libro_Bus.php?Valor=0";
+        String url  = "http://192.168.0.25/Programas/M_Libro_Bus.php";
         JsonArrayRequest peticion = new JsonArrayRequest(
                 Request.Method.GET,
                 url,
@@ -30,9 +29,18 @@ public class OrigenDLB {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
+                            BusqPojo xi;
                         try {
-                            unica.BPttl=(""+response.getString(0));
-                            unica.BPimg=(""+response.getString(1));
+                            for (int i=0; i<6; i++) {
+                                //[{"titulo":"primero", "url":"link1"}, {"titulo":"segundo", "url":"link2"}]
+                                xi =  new BusqPojo();
+                                xi.BPttl = ("" + response.getJSONObject(i).getString("titulo"));
+                                xi.BPimg = ("" + response.getJSONObject(i).getString("url"));
+                                xi.BPclv = i;
+                                //unica.BPttl=(""+response.getString(0));
+                                //unica.BPimg=(""+response.getString(1));
+                                resultado.add(xi);
+                            }
                         }catch (JSONException e){
                             e.printStackTrace();
                         }
