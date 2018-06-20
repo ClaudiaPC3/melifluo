@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,36 +7,36 @@
     android:layout_marginRight="15dp"
     android:layout_marginLeft="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:id="@+id/imagen_turno"/>
+        android:id="@+id/imagen_l"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginRight="15dp"
-        android:layout_marginLeft="10dp">
-    <TextView
-        android:id="@+id/nombre_turno"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_gravity="left"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:id="@+id/desc"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/nombre_l"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
 
-       />
+        <Button
+            android:id="@+id/grdr_l"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="GUARDAR"
+            android:onClick="click"
+            />
     </LinearLayout>
-
 </LinearLayout>
