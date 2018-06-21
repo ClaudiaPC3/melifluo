@@ -69,7 +69,33 @@ public class MiLibro extends AppCompatActivity {
             }
         }
         );
+        url  = "http://192.168.0.25/Programas/Autor.php?id=" + clave;
+        JsonArrayRequest peticion1 = new JsonArrayRequest(
+                Request.Method.GET,
+                url,
+                null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        try {
+
+                            autore.setText(""+response.getString(0)+" "+response.getString(1)+" "+response.getString(2));
+
+                        }catch (JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }
+
+                ,new Response.ErrorListener(){
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(MiLibro.this,error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        }
+        );
         RequestQueue x= Volley. newRequestQueue(MiLibro.this);
         x.add(peticion);
+        x.add(peticion1);
     }
 }
