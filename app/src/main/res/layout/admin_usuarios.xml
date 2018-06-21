@@ -53,7 +53,7 @@
             android:text="ID" />
 
         <EditText
-            android:id="@+id/id"
+            android:id="@+id/us_id"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -78,7 +78,7 @@
             android:text="URL imagen" />
 
         <EditText
-            android:id="@+id/url_imagen"
+            android:id="@+id/us_url"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -132,18 +132,18 @@
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
-            android:id="@+id/nombre_usuario"
+            android:id="@+id/us_name"
             android:layout_marginLeft="5dp"/>
 
         <EditText
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:id="@+id/apellidoP_usuario"
+            android:id="@+id/us_app"
             android:layout_marginLeft="10dp"/>
 
         <EditText
-            android:id="@+id/apellidoM_usuario"
+            android:id="@+id/us_apm"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="left"
@@ -159,7 +159,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/calendario"
+            android:id="@+id/us_calendario"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_gravity="left"
@@ -169,7 +169,7 @@
             android:background="#ffff"/>
 
         <TextView
-            android:id="@+id/nac"
+            android:id="@+id/us_nac"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -188,7 +188,7 @@
         android:text="Descripción" />
 
     <EditText
-        android:id="@+id/desc"
+        android:id="@+id/us_desc"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="left"
@@ -211,15 +211,7 @@
             android:text="Tipo de Usuario" />
 
         <CheckBox
-            android:id="@+id/usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:text="usuario"
-            />
-        <CheckBox
-            android:id="@+id/administrador"
+            android:id="@+id/us_administrador"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="left"

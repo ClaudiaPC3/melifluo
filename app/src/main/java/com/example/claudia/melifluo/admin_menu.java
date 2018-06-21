@@ -8,19 +8,28 @@ import android.widget.Button;
 
 public class admin_menu extends AppCompatActivity {
 
-    public Button a_autores, a_libros, a_categorias, a_encuadernado, a_pais, a_editorial;
+    public Button a_autores, a_libros, a_categorias, a_encuadernado, a_pais, a_editorial, a_usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_menu);
 
+        a_usuario = (Button)findViewById(R.id.admin_usuarios);
         a_autores = (Button)findViewById(R.id.admin_autores);
         a_libros = (Button)findViewById(R.id.admin_libro);
         a_categorias = (Button)findViewById(R.id.admin_categoria);
         a_editorial = (Button)findViewById(R.id.admin_editoriales);
         a_encuadernado = (Button)findViewById(R.id.admin_encuadernados);
         a_pais = (Button)findViewById(R.id.admin_pais);
+
+        a_usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent us = new Intent(admin_menu.this, admin_usuarios.class);
+                startActivity(us);
+            }
+        });
 
         a_autores.setOnClickListener(new View.OnClickListener() {
             @Override

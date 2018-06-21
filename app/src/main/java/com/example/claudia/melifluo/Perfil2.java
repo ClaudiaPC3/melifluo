@@ -68,7 +68,5 @@ public class Perfil2 extends AppCompatActivity {
         );
         RequestQueue x= Volley. newRequestQueue(Perfil2.this);
         x.add(peticion);
-
-
     }
 }
