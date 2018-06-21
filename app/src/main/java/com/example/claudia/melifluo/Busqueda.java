@@ -9,10 +9,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Busqueda extends AppCompatActivity {
-    public TextView T1, T2, T3;
     public String clave;
-    public Button B1, B2, B3;
-    public ImageView Im1, Im2, Im3;
     public ListView libros;
     public BusqAdpat adap;
     public OrigenDLB origen;

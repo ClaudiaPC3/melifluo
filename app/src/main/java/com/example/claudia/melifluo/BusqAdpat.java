@@ -31,7 +31,7 @@ public class BusqAdpat extends BaseAdapter{
     public LayoutInflater inflater;
     public Button btn;
     public String clave;
-    public String libro;
+
 
     BusqAdpat(String clv){
         clave = clv;

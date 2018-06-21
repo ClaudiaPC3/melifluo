@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">melifluo</string>
     <string name="title_activity_admin_libro">admin_libro</string>
+    <string name="title_activity_mbiblio">MBiblio</string>
 </resources>
