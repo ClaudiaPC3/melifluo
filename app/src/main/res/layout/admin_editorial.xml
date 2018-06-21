@@ -14,7 +14,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:background="#BCFF97"
-        android:text="limpiar" />
+        android:text="limpiar"
+        android:id="@+id/ed_clean"/>
 
     <LinearLayout
 
@@ -34,7 +35,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
-            android:text="Pais: "
+            android:text="Edirorial: "
             android:textAlignment="center"
             android:textSize="20dp"/>
 
@@ -57,7 +58,7 @@
                 android:textSize="20dp"/>
 
             <EditText
-                android:id="@+id/numero_edicion"
+                android:id="@+id/ed_id"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -84,7 +85,7 @@
                 android:textSize="20dp"/>
 
             <EditText
-                android:id="@+id/titulo"
+                android:id="@+id/ed_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -105,12 +106,12 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:text="Pais: "
+                android:text="Clave Pais: "
                 android:textAlignment="center"
                 android:textSize="20dp"/>
 
-            <Spinner
-                android:id="@+id/paiss"
+            <EditText
+                android:id="@+id/ed_pais"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -126,28 +127,28 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/consultar"
+                android:id="@+id/ed_consultar"
                 android:text="Consultar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="#FFFFC1"
                 android:layout_marginEnd="5dp"/>
             <Button
-                android:id="@+id/agregar"
+                android:id="@+id/ed_agregar"
                 android:text="agregar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="#FFFFC1"
                 android:layout_marginEnd="5dp"/>
             <Button
-                android:id="@+id/modificar"
+                android:id="@+id/ed_modificar"
                 android:text="modificar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="#FFFFC1"
                 android:layout_marginEnd="5dp"/>
             <Button
-                android:id="@+id/eliminar"
+                android:id="@+id/ed_eliminar"
                 android:text="eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"

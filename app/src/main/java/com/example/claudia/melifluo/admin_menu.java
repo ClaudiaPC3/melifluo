@@ -17,7 +17,7 @@ public class admin_menu extends AppCompatActivity {
 
         a_usuario = (Button)findViewById(R.id.admin_usuarios);
         a_autores = (Button)findViewById(R.id.admin_autores);
-        a_libros = (Button)findViewById(R.id.admin_libro);
+        //a_libros = (Button)findViewById(R.id.admin_libro);
         a_categorias = (Button)findViewById(R.id.admin_categoria);
         a_editorial = (Button)findViewById(R.id.admin_editoriales);
         a_encuadernado = (Button)findViewById(R.id.admin_encuadernados);
@@ -39,13 +39,13 @@ public class admin_menu extends AppCompatActivity {
             }
         });
 
-        a_libros.setOnClickListener(new View.OnClickListener() {
+       /* a_libros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent lib1 = new Intent(admin_menu.this, admin_libros.class);
                 startActivity(lib1);
             }
-        });
+        });*/
 
         a_categorias.setOnClickListener(new View.OnClickListener() {
             @Override

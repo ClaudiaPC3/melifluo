@@ -14,7 +14,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:background="#70E8B8"
-        android:text="limpiar" />
+        android:text="limpiar"
+        android:id="@+id/lib_clean"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +54,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/id"
+            android:id="@+id/lib_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -80,7 +81,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/url_imagen"
+            android:id="@+id/lib_url"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="left"
@@ -107,13 +108,15 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/titulo"
+            android:id="@+id/lib_titulo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -124,43 +127,17 @@
         android:layout_marginLeft="10dp" >
 
         <Button
-            android:id="@+id/pre_select_autores"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:text="Autor: "
-            android:textAlignment="center"
-            android:textSize="18dp"
-            android:background="#B4FFE9"/>
-
-        <TextView
-            android:id="@+id/select_autores"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="10dp" >
-
-        <TextView
-            android:id="@+id/pre-publicacion"
+            android:id="@+id/lib_cal"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:text="Publicación: "
             android:textAlignment="center"
-            android:textSize="20dp"/>
+            android:textSize="15dp"
+            android:background="#B4FFE9"/>
 
-        <EditText
-            android:id="@+id/publicacion"
+        <TextView
+            android:id="@+id/lib_publicacion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -187,7 +164,7 @@
 
 
         <EditText
-            android:id="@+id/numero_edicion"
+            android:id="@+id/lib_numed"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -211,39 +188,15 @@
             android:textAlignment="center"
             android:textSize="20dp"/>
 
-        <Spinner
-            android:id="@+id/editorial"
+        <EditText
+            android:id="@+id/lib_ed"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="10dp" >
 
-        <Button
-            android:id="@+id/pre_select_categoria"
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:text="Categoria: "
-            android:textAlignment="center"
-            android:textSize="16dp"
-            android:background="#B4FFE9"/>
-
-        <TextView
-            android:id="@+id/select_categoria"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -261,8 +214,8 @@
             android:textAlignment="center"
             android:textSize="18dp"/>
 
-        <Spinner
-            android:id="@+id/encuadernado"
+        <EditText
+            android:id="@+id/lib_enc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -278,28 +231,28 @@
         android:layout_marginTop="10dp">
 
         <Button
-            android:id="@+id/consultar"
+            android:id="@+id/lib_consultar"
             android:text="Consultar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#B4FFE9"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/agregar"
+            android:id="@+id/lib_agregar"
             android:text="agregar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#B4FFE9"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/modificar"
+            android:id="@+id/lib_modificar"
             android:text="modificar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="#B4FFE9"
             android:layout_marginEnd="5dp"/>
         <Button
-            android:id="@+id/eliminar"
+            android:id="@+id/lib_eliminar"
             android:text="eliminar"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
